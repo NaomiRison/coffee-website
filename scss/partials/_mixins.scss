@@ -1,0 +1,34 @@
+
+@mixin my-dark-box{
+	width:30%;
+	// put background in main.scss file
+	opacity: 0.8;
+	padding: 10px;
+	width: 50%;
+	margin-right: 25%;
+	margin-left: auto;
+	border-radius: 10px;
+	margin-top: 10%;
+}
+
+@mixin center-and-align{
+	text-align: center;
+	margin: 0 auto;
+}
+
+@mixin warning{
+	background-color: green;
+	color: #fff;
+	// sass bulit in functiom
+	&:hover{
+		background-color: lighten(green,10%);
+	}
+}
+
+@mixin small-medium-screens(){
+	@media only screen and (max-width: 767px){
+		@content;
+		// specify styles what we want for small
+		//size with content directive
+	}
+}

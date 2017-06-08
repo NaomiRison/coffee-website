@@ -1,0 +1,173 @@
+@import "partials/variables"; 
+@import "partials/mixins"; 
+
+
+body{
+	font-size: 21px;
+	color: $text-color;
+	background:url(http://www.wallpapers-web.com/data/out/53/4184830-coffee-cup-wallpapers.jpg) center center;
+	/*even though height is same, not all of pic shows.
+	this creates another problem:
+	now for large devices height is not fine becuase part of 
+	picture at bottom is cropped out
+	the reason why? pic starts from top left in jumbotron built in bootsrtap
+	we add center center to center it vertically and horizontally*/
+	height: 1000px;
+	/*width of pic adjusts to screen with below*/
+	background-size:100% 100%;
+	background-attachment: fixed;
+
+}
+ h1{
+ 	font-size: 180%;
+ }
+
+ p{
+	font-family: $headline-font;
+}
+#darkbox{
+	@include my-dark-box;
+	background-color: black;
+	width: 80%;
+	@include center-and-align;
+
+}
+.main-nav{
+  	float: right;
+  	list-style: none;
+  	margin-top: 55px;
+  }
+.main-nav li{
+	display:inline-block;
+	margin-left: 40px;
+}
+/*want elements side by side,
+ so display: inline-block;*/
+.main-nav li a:link,
+.main-nav li a:visited{
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 90%;
+	border-bottom: 2px solid transparent;
+	transition: 0.2s;
+}
+/*transparent makes the border not appear until
+you hover on it*/
+/* ornage border wont be visible becuase
+ its transparemt until we hover it*/
+/*18px/20px=0.9
+times 100= 90%*/
+.main-nav li a:hover,
+.main-nav li a:active{
+	border-bottom: 2px solid #E87E04;
+	
+	padding: 8px 0;
+}
+
+
+
+/*------------sticky navbar-----------------*/
+.sticky{
+  position: fixed;
+  /*want to be on the top left corner*/
+  top: 0;
+  left: 0;
+  /*occupy whole browser width of
+  any size*/
+  width: 100%;
+  background-color: rgba(255,255,255,0.98);
+  box-shadow: 0 2px 2px #a9b6cc;
+  /*zero on x axis, 2 pixels in y and 2px blurr
+  finally color of shadow*/
+  z-index: 9999;
+  /*this element will be on top of others because 
+  it has highest possible number 9999
+  in the  z-index. works on position:absolute, 
+  position:relative, or position:fixed 
+   more info at
+  https://www.w3schools.com/cssref/pr_pos_z-index.asp*/
+}
+ .sticky .main-nav li a:link,
+ .sticky .main-nav li a:visited{
+  color: #555;
+  padding: 15px 0;
+  }
+  .sticky .logo-black{
+    display: block;
+  }
+.sticky .logo{
+  display: none;
+
+}
+
+ .sticky .main-nav{
+  margin-top: 18px;
+}
+
+/*--------------------------------------*/
+ /* MOBILE nav*/
+  /*--------------------------------------*/
+
+
+.mobile-nav{
+  float: right;
+  margin-top: 5%;
+  /*margin-top:30px;*/
+  cursor: pointer;
+  /*cursor: pointer is used so that
+  when we ahover over bars, theres a pointer
+  like all the other links*/
+  display: none;
+  /*dsiplay none is used because it shows with 
+  the screen enlarged */
+}
+.mobile-nav .fa-bars{
+  font-size: 200%;
+  color: white;
+}
+
+
+// QUERIES
+@include small-medium-screens {
+		
+			.main-nav{display: none;}
+			/*we want bars to show up now*/
+			.mobile-nav{display: inline-block;}
+			/*now define what happens when we click on bars
+			button, back to script.js file!*/
+			.main-nav{float: left;}
+			.main-nav li {
+				display: block;
+				
+				margin-top: 7%;
+				
+			}
+			.main-nav li a:link,
+			.main-nav li a:visited{
+				border:0;
+				/*border does not show up for regualar
+				or sticky nav*/
+				display: block;
+				font-size: 100%;
+
+				}
+
+				/*sticky nav bar links*/
+		.sticky .main-nav li a:link,
+		 .sticky .main-nav li a:visited{
+		  color: #555;
+		  padding: 10px 0;
+		  }
+		  
+		 .sticky .main-nav{
+		  margin-top: 10px;
+		}
+		/*now make bars black in stick class because cant 
+		see it when you scroll down*/
+		.sticky .mobile-nav .fa-bars{
+			color: black;
+		}
+
+
+			}
