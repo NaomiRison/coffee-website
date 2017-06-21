@@ -1,6 +1,6 @@
 
 
-$("#js-features").waypoint(function(direction){
+$(".js-features").waypoint(function(direction){
  	//  notice how file has waypoints
  	//and name of method is waypoint
  	/*

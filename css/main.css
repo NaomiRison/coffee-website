@@ -16,6 +16,13 @@ body {
 h1 {
   font-size: 180%; }
 
+.row {
+  max-width: 1140px;
+  margin: 0 auto; }
+
+section {
+  padding: 1% 2%; }
+
 p {
   font-family: "Exo 2", sans-serif; }
 
@@ -64,6 +71,9 @@ times 100= 90%*/
   border-bottom: 2px solid #E87E04;
   padding: 8px 0; }
 
+.js-features {
+  margin-top: 5%; }
+
 /*------------sticky navbar-----------------*/
 .sticky {
   position: fixed;
@@ -100,7 +110,7 @@ times 100= 90%*/
   margin-top: 18px; }
 
 /*--------------------------------------*/
-/* MOBILE nav*/
+/*  regular MOBILE nav*/
 /*--------------------------------------*/
 .mobile-nav {
   float: right;
@@ -118,7 +128,134 @@ times 100= 90%*/
   font-size: 200%;
   color: white; }
 
-@media only screen and (max-width: 767px) {
+#menue {
+  background: none;
+  margin: 0; }
+
+#menue #menuTop {
+  white-space: nowrap;
+  text-align: center;
+  overflow-x: hidden; }
+
+#menue #menueTop {
+  margin: 0 auto;
+  background-image: url(http://media1.s-nbcnews.com/i/newscms/2017_07/1195073/coffee-stock-today-tease-170213_9d8a1de19bd0eaab2f4d2284414ddbca.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 505px;
+  width: 100%;
+  background-color: #464646; }
+
+#menue #wrapper {
+  width: 100%;
+  margin: 0 auto; }
+
+#menue .row {
+  color: black;
+  padding-top: 2%; }
+
+#menue div {
+  display: block; }
+
+#menue #menue-top-navwrap {
+  width: 1000px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative; }
+
+#menue #menu-top-nav {
+  width: 186px;
+  height: 201px;
+  position: absolute;
+  bottom: 3%;
+  left: 0;
+  float: left;
+  display: inline-block;
+  vertical-align: middle;
+  white-space: normal;
+  text-decoration: none; }
+
+#menue #menueTop a:link,
+#menue #menueTop a:visited {
+  display: block;
+  width: 90%;
+  height: 67px;
+  color: white;
+  background-color: #00b300;
+  text-decoration: none;
+  position: absolute;
+  top: -40%;
+  right: 2%;
+  margin-left: 20%;
+  padding-top: 25%;
+  opacity: 0.8; }
+
+#menue table {
+  vertical-align: top;
+  font-size: 18px;
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin-top: 2%;
+  margin-bottom: 3%; }
+
+#menue tbody {
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit; }
+
+#menue tr {
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+  background-color: orange;
+  margin: 0; }
+
+#menue p {
+  margin-top: 5%; }
+
+#menue table td {
+  margin-top: 10px;
+  padding: 0;
+  vertical-align: top; }
+
+#menue .anotherTr {
+  background-color: white; }
+
+#menue .anotherTr p {
+  color: black; }
+
+#menue .orangeCapital {
+  color: #d1551f; }
+
+#menue .greenTitle {
+  color: #827b00; }
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .main-nav {
+    display: inline-block;
+    padding-right: 2%; }
+
+  #menue #menueTop a:link,
+  #menue #menueTop a:visited {
+    display: block;
+    width: 90%;
+    height: 67px;
+    color: white;
+    background-color: #00b300;
+    text-decoration: none;
+    position: absolute;
+    top: -40%;
+    right: 2%;
+    margin-left: 20%;
+    padding-top: 25%;
+    position: absolute;
+    top: -100%;
+    right: 2%;
+    margin-left: 20%;
+    padding-top: 25%; } }
+@media only screen and (max-width: 768px) {
   .main-nav {
     display: none; }
 
@@ -155,6 +292,51 @@ times 100= 90%*/
   /*now make bars black in stick class because cant 
   see it when you scroll down*/
   .sticky .mobile-nav .fa-bars {
-    color: black; } }
+    color: black; }
+
+  #menue table td {
+    display: block; }
+
+  #menue #menueTop {
+    background-size: 100% 100%;
+    height: 505px;
+    width: 100%; } }
+@media (min-width: 414px) and (max-width: 1200px) {
+  #menue #menueTop a:link,
+  #menue #menueTop a:visited {
+    display: block;
+    width: 90%;
+    height: 67px;
+    color: white;
+    background-color: #00b300;
+    text-decoration: none;
+    position: absolute;
+    top: -40%;
+    right: 2%;
+    margin-left: 20%;
+    padding-top: 25%;
+    position: absolute;
+    top: -150%;
+    right: 2%;
+    margin-left: 20%;
+    padding-top: 25%; } }
+@media (min-width: 769px) and (max-width: 1200px) {
+  #menue #menueTop a:link,
+  #menue #menueTop a:visited {
+    display: block;
+    width: 90%;
+    height: 67px;
+    color: white;
+    background-color: #00b300;
+    text-decoration: none;
+    position: absolute;
+    top: -40%;
+    right: 2%;
+    margin-left: 20%;
+    padding-top: 25%;
+    position: absolute;
+    top: -355%;
+    right: 2%;
+    margin-left: 20%; } }
 
 /*# sourceMappingURL=main.css.map */
