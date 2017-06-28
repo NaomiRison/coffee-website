@@ -5,7 +5,7 @@
 body{
 	font-size: 21px;
 	color: $text-color;
-	background:url(http://www.wallpapers-web.com/data/out/53/4184830-coffee-cup-wallpapers.jpg) center center;
+	background:url(https://restaurantengine.com/wp-content/uploads/2013/11/Coffee-Shop-Scene-660x398.png) center center;
 	/*even though height is same, not all of pic shows.
 	this creates another problem:
 	now for large devices height is not fine becuase part of 
@@ -27,7 +27,31 @@ body{
   .row{
  	max-width: 1140px;
  	margin: 0 auto;
+ 	
+
  }
+ .yellow{
+ 	color: yellow;
+ }
+.carousel-caption{
+	// width:50%;
+	margin-bottom: 20%;
+	margin-left: 20%;
+}
+ .carousel-caption p{
+ 	font-family: 'Amatic SC', cursive;
+ 	font-size: 400%;
+ 	// font size can be 200% for <1024px
+ }
+ // .item img{
+ // 	width: 100%;
+ // 	height: 800px;
+ // }
+ #myCarousel img {
+  height: 500px;
+  width: 100%;
+  overflow: hidden;
+}
  
 
 section{
@@ -44,16 +68,46 @@ section{
 	width: 80%;
 	@include center-and-align;
 
+
 }
+#Largedarkbox{
+	width:100%;
+	border-radius: 10px;
+	margin-top: 10%;
+	opacity: 0.8;
+	background-color: black;
+}
+header{
+	background-color: none;
+  	width: 100%;
+  	height: 12%;
+  	
+  	 top: 0;
+  left: 0;
+}
+
+.footer{
+	background-color: #333;
+  	font-size: 80%;
+  	padding: 50px;
+	text-align: center;
+	
+}
+
 
 .main-nav{
   	float: right;
   	list-style: none;
   	margin-top: 55px;
+  	// background-color: brown;
+  	// width: 100%;
+  	// height: 20%;
+
   }
 .main-nav li{
 	display:inline-block;
 	margin-left: 40px;
+
 }
 /*want elements side by side,
  so display: inline-block;*/
@@ -74,7 +128,7 @@ you hover on it*/
 times 100= 90%*/
 .main-nav li a:hover,
 .main-nav li a:active{
-	border-bottom: 2px solid #E87E04;
+	border-bottom: 2px solid #e7f218;
 	
 	padding: 8px 0;
 }
@@ -94,6 +148,8 @@ times 100= 90%*/
   /*occupy whole browser width of
   any size*/
   width: 100%;
+ 
+
   background-color: rgba(255,255,255,0.98);
   box-shadow: 0 2px 2px #a9b6cc;
   /*zero on x axis, 2 pixels in y and 2px blurr
@@ -109,6 +165,7 @@ times 100= 90%*/
  .sticky .main-nav li a:link,
  .sticky .main-nav li a:visited{
   color: #555;
+
   padding: 15px 0;
   }
   .sticky .logo-black{
@@ -121,6 +178,7 @@ times 100= 90%*/
 
  .sticky .main-nav{
   margin-top: 18px;
+
 }
 
 /*--------------------------------------*/
@@ -149,11 +207,18 @@ times 100= 90%*/
 // Menue section
 
 #menue{
-	background:none;
+	background: none;
 	margin:0;
+	font-size: 21px;
 
 
 }
+#menue .footer{
+	color: white;
+
+}
+
+
 #menue #menuTop {
     white-space: nowrap;
     text-align: center;
@@ -161,7 +226,7 @@ times 100= 90%*/
 
 }
 
-#menue #menueTop{
+#menue header{
     // width: 100%;
     // height: 500px;
     margin: 0 auto;
@@ -170,10 +235,13 @@ times 100= 90%*/
     background-repeat: no-repeat;
     
     background-size:100% 100%;
-    height: 505px;
+    height: 557px;
     width: 100%;
   
     background-color: #464646;
+}
+#menue #menueTop{
+	height: 0;
 }
 
 #menue #wrapper {
@@ -257,7 +325,358 @@ times 100= 90%*/
 	color: $greenTitle;
 }
 
+
+// About Page
+#about{
+	// background: none;
+	font-size: 21px;
+ overflow-x:hidden;
+  
+
+
+
+}
+
+
+#about .footer{
+
+margin-top: 5%;
+
+}
+#about h2{
+	font-size: 160%;
+}
+#about section{
+	height: 70%;
+
+
+}
+// #about .videoWrapper{
+// 	background-color: #ebebeb;
+// }
+
+#about #darkbox{
+	margin-left: 10%;
+}
+
+#about section .videoWrapper{
+
+
+	// height: 100%;
+	// width: 100%;
+	position:relative;
+	// padding-bottom:40%;
+	padding-top:2%;
+	height:50%;
+	overflow:hidden;
+
+
+
+
+  
+
+
+}
+
+.videoWrapper iframe {
+	
+
+	
+	// height: 100%;
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:65%;
+	  margin: 0 auto;
+	  // padding-top: 3%;
+}
+#about .after-video{
+	position: relative;
+	    margin: 0 auto;
+	   
+        float: left;
+    top:-35%;
+	width: 100%;
+
+}
+// #about #cotentHeader{
+// 	background-color: purple;
+// 	background:url(http://www.brightandearlycoffee.com/v/vspfiles/photos/homepage/1481814636400.jpg);
+// 	width: 100%;
+
+// 	height: 20%;
+// 	 background-repeat: no-repeat;
+// 	 // height: 227px;
+    
+//     margin: 0 auto;
+//     background-position: center;
+//     // background-size: cover;
+    
+// }
+
+
+#about #contentHeader .title {
+    width: 1000px;
+    margin: 0 auto;
+    height: 227px;
+    position: relative;
+}
+#about #contentHeader .title h2.entry-title {
+    position: absolute;
+    bottom: 0;
+    color: white;
+}
+
+#about .orangeHeading{
+	    text-transform: uppercase;
+    color: #FF6600;
+    font-size: 160%;
+
+}
+#about p{
+	display: block;
+}
+#about #aboutList{
+	display: block;
+}
+
+
+#about #aboutContent{
+	    height: auto;
+    width: 100%;
+    max-width: 685px;
+    
+    min-height: 400px;
+}
+
+
+
+   // GALLERY
+
+
+ #gallery body{
+	font-size: 20px;
+	background: rgb(149,194,175);
+	// display: flex;
+	// flex-direction: column;
+}
+ 
+html, #gallery body{
+	height: 100%;
+}
+@font-face{
+	font-family: 'lakeshore';
+	src:url('fonts/LAKESHOR-webfont.eot');
+	src:url('fonts/LAKESHOR-webfont.eot?#iefix') format('embedded-opentype'),
+	url('fonts/LAKESHOR-webfont.woff')format('woff'),
+	url('fonts/LAKESHOR-webfont.ttf')format('truetype'),
+	url('fonts/LAKESHOR-webfont.svg#lakeshore')format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+// need to add #gallery to mobile nav styles:
+
+
+#gallery h1{
+	font-size: 160%;
+	text-transform: uppercase;
+	color: black;
+	background-color: black;
+	opacity: 0.7;
+	margin-top: 15%;
+	  letter-spacing: 2px;
+	  padding: 3%;
+}
+// #gallery .mobile-nav{
+
+// 	display: flex;
+// 	display: inline-block;
+	
+// 	flex-direction: row;
+// 	height: 20%;
+// 	width:30%;
+// }
+// body:
+#gallery .thumbnail-title{
+	background: rgb(96,125,139);
+	color: rgb(202,238,255);
+     font-size: 140%;
+	display: block;
+	/* box around it takes up 100% of width
+	of conatiner/li since its a block*/
+	margin:0;
+	padding: 1% 2%;
+}
+#gallery .thumbnail-item{
+	display: inline-block;
+	min-width: 120px;
+	max-width: 120px;
+	border: 1px solid rgb(100%,100%,100%);
+	border: 1px solid rgba(100%,100%,100%,0.8);
+	transition: transform 133ms ease-in;
+}
+#gallery .thumbnail-item img{
+	
+	min-height: 180px;
+	max-height: 180px;
+	
+}
+
+#gallery .thumbnail-item:hover{
+	transform: scale(1.2);
+}
+ #gallery a[href="#"]{
+	text-decoration: none;
+	
+}
+#gallery .thumbnail-image{
+	width: 100%;
+	/* below,  this got rid of spacing between titles and images in
+	 thumbnail-titles now they are stacked on top of each other*/
+	display: block;
+	/*	flex-shrink: 0; 
+	 flex: 1 0 auto;*/
+}
+#gallery .thumbnail-list{
+	list-style: none;
+	 padding: 140px 20px;
+
+	/*to keep list from wrapping
+	and to add horizontal scrow bar: */
+	white-space: nowrap;
+	overflow-x: auto;
+	
+	/*flex:0 1 auto*/;
+	order: 2;
+	display: flex;
+
+	/*flex-shrink: 0;*/ 
+	 flex: 0 1 auto;
+	 justify-content: space-between;
+	
+
+	 
+}
+#gallery .logo-text{
+	background: white;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 90%;
+	font-family: lakeshore;
+}
+#gallery .detail-image{
+	width: 90%;
+
+	 
+}
+#gallery .div-detail {
+	color: white;
+	font-weight: 40px;
+	width:50%;
+	position: absolute;
+	bottom: -39px;
+	left: 4px;
+	font-size: 180%;
+	text-shadow: 5px 2px 7px #000000;
+	
+
+
+}
+
+
+#gallery .detail-frame{
+	text-align: center;
+	position: relative;
+}
+#gallery .main-header{
+	flex: 0 1 auto; 
+}
+#gallery .main-content{
+	flex: 1 1 auto;
+	/*grow as much as i can
+	shrink as much as i can
+	computer calculate size*/
+
+	display: flex;
+	
+	flex-direction: column;
+	
+	/* will place ul inside it at bottom
+	because it swaps for main and cross axes*/
+}
+#gallery .detail-container{
+	flex: 1 1 auto;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+
+
+/*--------------------------------------*/
+ /* CONTACT FORM
+  /*--------------------------------------*/
+
+#contact body{
+	font-size: 21px;
+}
+#contact .contact-form{
+	width: 60%;
+	margin: 0 auto;
+
+  }
+
+  #contact  input[type=text],
+  #contact  input[type=email],
+  #contact  select,
+  #contact  textarea{
+  	width: 100%;
+  	/*want elemrnts to fill whole column*/
+  	border-radius: 5px;
+  	// border:#e7f218;
+  }
+/*selecting input elements
+ with type text and email*/
+#contact   textarea{
+ 	height: 100px;
+ }
+
+ #contact #darkbox{
+	@include my-dark-box;
+	background-color: black;
+	width: 80%;
+	text-align: left;
+}
+
+
+
 // QUERIES
+
+@include text-for-carousel{
+	.carousel-caption p{
+ 	
+ 	font-size: 180%;
+ 	margin-bottom: 0;
+ 	// font size can be 200% for <1024px
+ }
+}
+@include text-for-Smallcarousel{
+	.carousel-caption p{
+		margin-bottom: 0;
+ 	
+ 	font-size: 140%;
+ 	// font size can be 200% for <1024px
+ }
+}
+// @media (max-width: 768px) and (min-width: 320px) {
+//    font-size: 300%;
+// }
+ @include brown-header {
+ 	header{
+ 		background-color: brown;
+ 	}
+ }
+// rest are from mixins
 @include medium-large-screens{
 	.main-nav{display:inline-block;
 		padding-right: 2%;}
@@ -273,6 +692,7 @@ times 100= 90%*/
 				 
 
  		}
+ 	
 }
 @include small-medium-screens {
 		
@@ -282,20 +702,34 @@ times 100= 90%*/
 				display: inline-block;
 
 				}
+
+				
 			/*now define what happens when we click on bars
 			button, back to script.js file!*/
 			.main-nav{
 				float: left;
 				
+				
 
 			}
+			
+
 
 			.main-nav li {
 				display: block;
 				
 				margin-top: 7%;
+
 				
 			}
+			#menue .main-nav li {
+				
+				
+				margin-top: 15%;
+
+			}
+				
+			
 			.main-nav li a:link,
 			.main-nav li a:visited{
 				border:0;
@@ -304,7 +738,9 @@ times 100= 90%*/
 				display: block;
 				font-size: 100%;
 
+
 				}
+			
 
 				/*sticky nav bar links*/
 		.sticky .main-nav li a:link,
@@ -322,15 +758,20 @@ times 100= 90%*/
 			color: black;
 		}
 
+
+
+			/*sticky nav bar links*/
+		
+
 			 #menue table td{
 			 	display: block;
 			 }
-			 #menue #menueTop{
-			 	 background-size:100% 100%;
-    			height: 505px;
-   				 width: 100%;
+			 // #menue #menueTop{
+			 // 	 background-size:100% 100%;
+    // 			height: 505px;
+   	// 			 width: 100%;
 
-			 }
+			 // }
 
 			}
 
@@ -340,7 +781,7 @@ times 100= 90%*/
 			#menue #menueTop a:visited{
  				@include orderNow;
  				 position: absolute;
-  					top:-150%;
+  					top:-120%;
 				  right: 2%;
 				  margin-left: 20%;
 				  padding-top:25%;
@@ -363,14 +804,106 @@ times 100= 90%*/
 
  			}
  		}
- 			
- 			 
 
-// @include medium-large-screens {
 
-// 		.main-nav li{
-// 	display:inline-block;
-// 	margin-left: 2%;
+ 		// Queries for gallery
+ 		@media all and (min-width: 768px) {
+   #gallery .main-content {
+    flex-direction: row;
+    overflow: hidden;
+  }
+
+  #gallery .thumbnail-list {
+    flex-direction: column;
+    order: 0;
+    margin-left: 20px;
+    position: 20px 100px;
+  }
+
+  #gallery .thumbnail-item {
+    max-width: 260px;
+  }
+
+   #gallery .thumbnail-item + .thumbnail-item {
+    margin-top: 20px;
+  }
+   #gallery .detail-title{
+	color: white;
+	font-weight: 40px;
+
+	position: absolute;
+	bottom: 350px;
+	left: 4px;
+
 	
-// 	}
-// }
+
+
+}
+
+
+}
+@media all and (min-width: 1024px) {
+   #gallery .detail-title{
+  color: white;
+  font-weight: 40px;
+
+  position: absolute;
+  bottom: 700px;
+  left: 4px;
+
+  
+
+
+}
+@media (max-width: 1024px) and (min-width: 769px) {
+   #gallery .div-detail .detail-title{
+  
+  bottom: 500px;
+}
+@media all and (max-width: 1600px) {
+   #gallery .detail-title{
+  color: white;
+  font-weight: 40px;
+
+  position: absolute;
+  bottom: 70px;
+  left: 4px;
+
+ }
+
+ 	}
+ }
+
+}
+
+// about queries adjustments made with footer
+
+
+
+
+
+
+ /*--------------------------------------*/
+ /* ANIMATIONS
+  /*--------------------------------------*/
+  
+  #menue .js-waypoint-1,
+  #menue .js-waypoint-2,
+  #menue .js-waypoint-3{
+    opacity: 0;
+    /*element is not visible
+    once the class has abimated class we want
+    the opacity back to 1*/
+    animation-duration: 1s;
+  }
+  #menue .js-waypoint-1.animated,
+  #menue .js-waypoint-2.animated,
+  #menue .js-waypoint-3.animated{
+    opacity: 1;
+
+  }
+
+
+
+
+ 			 

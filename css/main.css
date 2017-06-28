@@ -1,7 +1,7 @@
 body {
   font-size: 21px;
   color: white;
-  background: url(http://www.wallpapers-web.com/data/out/53/4184830-coffee-cup-wallpapers.jpg) center center;
+  background: url(https://restaurantengine.com/wp-content/uploads/2013/11/Coffee-Shop-Scene-660x398.png) center center;
   /*even though height is same, not all of pic shows.
   this creates another problem:
   now for large devices height is not fine becuase part of 
@@ -19,6 +19,22 @@ h1 {
 .row {
   max-width: 1140px;
   margin: 0 auto; }
+
+.yellow {
+  color: yellow; }
+
+.carousel-caption {
+  margin-bottom: 20%;
+  margin-left: 20%; }
+
+.carousel-caption p {
+  font-family: 'Amatic SC', cursive;
+  font-size: 400%; }
+
+#myCarousel img {
+  height: 500px;
+  width: 100%;
+  overflow: hidden; }
 
 section {
   padding: 1% 2%; }
@@ -39,6 +55,26 @@ p {
   width: 80%;
   text-align: center;
   margin: 0 auto; }
+
+#Largedarkbox {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 10%;
+  opacity: 0.8;
+  background-color: black; }
+
+header {
+  background-color: none;
+  width: 100%;
+  height: 12%;
+  top: 0;
+  left: 0; }
+
+.footer {
+  background-color: #333;
+  font-size: 80%;
+  padding: 50px;
+  text-align: center; }
 
 .main-nav {
   float: right;
@@ -68,7 +104,7 @@ you hover on it*/
 times 100= 90%*/
 .main-nav li a:hover,
 .main-nav li a:active {
-  border-bottom: 2px solid #E87E04;
+  border-bottom: 2px solid #e7f218;
   padding: 8px 0; }
 
 .js-features {
@@ -130,22 +166,29 @@ times 100= 90%*/
 
 #menue {
   background: none;
-  margin: 0; }
+  margin: 0;
+  font-size: 21px; }
+
+#menue .footer {
+  color: white; }
 
 #menue #menuTop {
   white-space: nowrap;
   text-align: center;
   overflow-x: hidden; }
 
-#menue #menueTop {
+#menue header {
   margin: 0 auto;
   background-image: url(http://media1.s-nbcnews.com/i/newscms/2017_07/1195073/coffee-stock-today-tease-170213_9d8a1de19bd0eaab2f4d2284414ddbca.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  height: 505px;
+  height: 557px;
   width: 100%;
   background-color: #464646; }
+
+#menue #menueTop {
+  height: 0; }
 
 #menue #wrapper {
   width: 100%;
@@ -232,6 +275,234 @@ times 100= 90%*/
 #menue .greenTitle {
   color: #827b00; }
 
+#about {
+  font-size: 21px;
+  overflow-x: hidden; }
+
+#about .footer {
+  margin-top: 5%; }
+
+#about h2 {
+  font-size: 160%; }
+
+#about section {
+  height: 70%; }
+
+#about #darkbox {
+  margin-left: 10%; }
+
+#about section .videoWrapper {
+  position: relative;
+  padding-top: 2%;
+  height: 50%;
+  overflow: hidden; }
+
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 65%;
+  margin: 0 auto; }
+
+#about .after-video {
+  position: relative;
+  margin: 0 auto;
+  float: left;
+  top: -35%;
+  width: 100%; }
+
+#about #contentHeader .title {
+  width: 1000px;
+  margin: 0 auto;
+  height: 227px;
+  position: relative; }
+
+#about #contentHeader .title h2.entry-title {
+  position: absolute;
+  bottom: 0;
+  color: white; }
+
+#about .orangeHeading {
+  text-transform: uppercase;
+  color: #FF6600;
+  font-size: 160%; }
+
+#about p {
+  display: block; }
+
+#about #aboutList {
+  display: block; }
+
+#about #aboutContent {
+  height: auto;
+  width: 100%;
+  max-width: 685px;
+  min-height: 400px; }
+
+#gallery body {
+  font-size: 20px;
+  background: #95c2af; }
+
+html, #gallery body {
+  height: 100%; }
+
+@font-face {
+  font-family: 'lakeshore';
+  src: url("fonts/LAKESHOR-webfont.eot");
+  src: url("fonts/LAKESHOR-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/LAKESHOR-webfont.woff") format("woff"), url("fonts/LAKESHOR-webfont.ttf") format("truetype"), url("fonts/LAKESHOR-webfont.svg#lakeshore") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+#gallery h1 {
+  font-size: 160%;
+  text-transform: uppercase;
+  color: black;
+  background-color: black;
+  opacity: 0.7;
+  margin-top: 15%;
+  letter-spacing: 2px;
+  padding: 3%; }
+
+#gallery .thumbnail-title {
+  background: #607d8b;
+  color: #caeeff;
+  font-size: 140%;
+  display: block;
+  /* box around it takes up 100% of width
+  of conatiner/li since its a block*/
+  margin: 0;
+  padding: 1% 2%; }
+
+#gallery .thumbnail-item {
+  display: inline-block;
+  min-width: 120px;
+  max-width: 120px;
+  border: 1px solid white;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  transition: transform 133ms ease-in; }
+
+#gallery .thumbnail-item img {
+  min-height: 180px;
+  max-height: 180px; }
+
+#gallery .thumbnail-item:hover {
+  transform: scale(1.2); }
+
+#gallery a[href="#"] {
+  text-decoration: none; }
+
+#gallery .thumbnail-image {
+  width: 100%;
+  /* below,  this got rid of spacing between titles and images in
+   thumbnail-titles now they are stacked on top of each other*/
+  display: block;
+  /*	flex-shrink: 0; 
+   flex: 1 0 auto;*/ }
+
+#gallery .thumbnail-list {
+  list-style: none;
+  padding: 140px 20px;
+  /*to keep list from wrapping
+  and to add horizontal scrow bar: */
+  white-space: nowrap;
+  overflow-x: auto;
+  /*flex:0 1 auto*/
+  order: 2;
+  display: flex;
+  /*flex-shrink: 0;*/
+  flex: 0 1 auto;
+  justify-content: space-between; }
+
+#gallery .logo-text {
+  background: white;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 90%;
+  font-family: lakeshore; }
+
+#gallery .detail-image {
+  width: 90%; }
+
+#gallery .div-detail {
+  color: white;
+  font-weight: 40px;
+  width: 50%;
+  position: absolute;
+  bottom: -39px;
+  left: 4px;
+  font-size: 180%;
+  text-shadow: 5px 2px 7px #000000; }
+
+#gallery .detail-frame {
+  text-align: center;
+  position: relative; }
+
+#gallery .main-header {
+  flex: 0 1 auto; }
+
+#gallery .main-content {
+  flex: 1 1 auto;
+  /*grow as much as i can
+  shrink as much as i can
+  computer calculate size*/
+  display: flex;
+  flex-direction: column;
+  /* will place ul inside it at bottom
+  because it swaps for main and cross axes*/ }
+
+#gallery .detail-container {
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: center;
+  align-content: center; }
+
+/*--------------------------------------*/
+/* CONTACT FORM
+ /*--------------------------------------*/
+#contact body {
+  font-size: 21px; }
+
+#contact .contact-form {
+  width: 60%;
+  margin: 0 auto; }
+
+#contact input[type=text],
+#contact input[type=email],
+#contact select,
+#contact textarea {
+  width: 100%;
+  /*want elemrnts to fill whole column*/
+  border-radius: 5px; }
+
+/*selecting input elements
+ with type text and email*/
+#contact textarea {
+  height: 100px; }
+
+#contact #darkbox {
+  width: 30%;
+  opacity: 0.8;
+  padding: 10px;
+  width: 50%;
+  margin-right: 25%;
+  margin-left: auto;
+  border-radius: 10px;
+  margin-top: 10%;
+  background-color: black;
+  width: 80%;
+  text-align: left; }
+
+@media only screen and (max-width: 1023px) {
+  .carousel-caption p {
+    font-size: 180%;
+    margin-bottom: 0; } }
+@media only screen and (max-width: 411px) {
+  .carousel-caption p {
+    margin-bottom: 0;
+    font-size: 140%; } }
+@media (min-width: 769px) and (max-width: 1024px) {
+  header {
+    background-color: brown; } }
 @media (min-width: 768px) and (max-width: 1200px) {
   .main-nav {
     display: inline-block;
@@ -272,6 +543,9 @@ times 100= 90%*/
     display: block;
     margin-top: 7%; }
 
+  #menue .main-nav li {
+    margin-top: 15%; }
+
   .main-nav li a:link,
   .main-nav li a:visited {
     border: 0;
@@ -294,13 +568,9 @@ times 100= 90%*/
   .sticky .mobile-nav .fa-bars {
     color: black; }
 
+  /*sticky nav bar links*/
   #menue table td {
-    display: block; }
-
-  #menue #menueTop {
-    background-size: 100% 100%;
-    height: 505px;
-    width: 100%; } }
+    display: block; } }
 @media (min-width: 414px) and (max-width: 1200px) {
   #menue #menueTop a:link,
   #menue #menueTop a:visited {
@@ -316,7 +586,7 @@ times 100= 90%*/
     margin-left: 20%;
     padding-top: 25%;
     position: absolute;
-    top: -150%;
+    top: -120%;
     right: 2%;
     margin-left: 20%;
     padding-top: 25%; } }
@@ -338,5 +608,61 @@ times 100= 90%*/
     top: -355%;
     right: 2%;
     margin-left: 20%; } }
+@media all and (min-width: 768px) {
+  #gallery .main-content {
+    flex-direction: row;
+    overflow: hidden; }
+
+  #gallery .thumbnail-list {
+    flex-direction: column;
+    order: 0;
+    margin-left: 20px;
+    position: 20px 100px; }
+
+  #gallery .thumbnail-item {
+    max-width: 260px; }
+
+  #gallery .thumbnail-item + .thumbnail-item {
+    margin-top: 20px; }
+
+  #gallery .detail-title {
+    color: white;
+    font-weight: 40px;
+    position: absolute;
+    bottom: 350px;
+    left: 4px; } }
+@media all and (min-width: 1024px) {
+  #gallery .detail-title {
+    color: white;
+    font-weight: 40px;
+    position: absolute;
+    bottom: 700px;
+    left: 4px; } }
+@media all and (min-width: 1024px) and (max-width: 1024px) and (min-width: 769px) {
+  #gallery .div-detail .detail-title {
+    bottom: 500px; } }
+@media all and (min-width: 1024px) and (max-width: 1024px) and (min-width: 769px) and (max-width: 1600px) {
+  #gallery .detail-title {
+    color: white;
+    font-weight: 40px;
+    position: absolute;
+    bottom: 70px;
+    left: 4px; } }
+/*--------------------------------------*/
+/* ANIMATIONS
+ /*--------------------------------------*/
+#menue .js-waypoint-1,
+#menue .js-waypoint-2,
+#menue .js-waypoint-3 {
+  opacity: 0;
+  /*element is not visible
+  once the class has abimated class we want
+  the opacity back to 1*/
+  animation-duration: 1s; }
+
+#menue .js-waypoint-1.animated,
+#menue .js-waypoint-2.animated,
+#menue .js-waypoint-3.animated {
+  opacity: 1; }
 
 /*# sourceMappingURL=main.css.map */

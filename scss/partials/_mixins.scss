@@ -69,6 +69,20 @@
 		//size with content directive
 	}
 }
+@mixin text-for-carousel(){
+	@media only screen and (max-width: 1023px){
+		@content;
+		// specify styles what we want for small
+		//size with content directive
+	}
+}
+@mixin text-for-Smallcarousel(){
+	@media only screen and (max-width: 411px){
+		@content;
+		// specify styles what we want for small
+		//size with content directive
+	}
+}
 
 @mixin medium-large-screens(){
 	@media (min-width: 768px) and (max-width: 1200px){
@@ -88,5 +102,15 @@
 		@content
 	}
 
+}
+
+
+
+@mixin brown-header(){
+	@media (min-width: 769px) and (max-width: 1024px){
+		@content;
+		// specify styles what we want for small
+		//size with content directive
+	}
 }
 
