@@ -90,7 +90,7 @@
  }
 }
 @mixin specificSize1-screens(){
-	@media (min-width: 414px) and (max-width: 1200px){
+	@media (min-width: 414px) and (max-width: 767px){
 
 		@content
 	}

@@ -500,9 +500,6 @@ html, #gallery body {
   .carousel-caption p {
     margin-bottom: 0;
     font-size: 140%; } }
-@media (min-width: 769px) and (max-width: 1024px) {
-  header {
-    background-color: brown; } }
 @media (min-width: 768px) and (max-width: 1200px) {
   .main-nav {
     display: inline-block;
@@ -522,7 +519,7 @@ html, #gallery body {
     margin-left: 20%;
     padding-top: 25%;
     position: absolute;
-    top: -100%;
+    top: -130%;
     right: 2%;
     margin-left: 20%;
     padding-top: 25%; } }
@@ -571,7 +568,7 @@ html, #gallery body {
   /*sticky nav bar links*/
   #menue table td {
     display: block; } }
-@media (min-width: 414px) and (max-width: 1200px) {
+@media (min-width: 414px) and (max-width: 767px) {
   #menue #menueTop a:link,
   #menue #menueTop a:visited {
     display: block;
@@ -586,7 +583,7 @@ html, #gallery body {
     margin-left: 20%;
     padding-top: 25%;
     position: absolute;
-    top: -120%;
+    top: -60%;
     right: 2%;
     margin-left: 20%;
     padding-top: 25%; } }
@@ -605,7 +602,7 @@ html, #gallery body {
     margin-left: 20%;
     padding-top: 25%;
     position: absolute;
-    top: -355%;
+    top: -100%;
     right: 2%;
     margin-left: 20%; } }
 @media all and (min-width: 768px) {
